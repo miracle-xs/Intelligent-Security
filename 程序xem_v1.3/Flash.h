@@ -1,0 +1,11 @@
+extern void          Flash_Init  (void);
+extern void          Flash_WriteChar  (unsigned int Addr,unsigned char Data);
+extern unsigned char Flash_ReadChar   (unsigned int Addr);
+extern void          Flash_WriteWord  (unsigned int Addr,unsigned int  Data);
+extern unsigned int  Flash_ReadWord   (unsigned int Addr);
+extern void          Flash_WriteLong  (unsigned int Addr,unsigned long Data);
+extern unsigned long Flash_ReadLong   (unsigned int Addr);
+extern void          Flash_WriteFloat (unsigned int Addr,float         Data);
+extern float         Flash_ReadFloat  (unsigned int Addr);
+extern unsigned char ReadSegment_256(char index);
+extern void WriteSegment_256(int index,unsigned char *value,int size);
